@@ -30,8 +30,8 @@ import {
 
 import FetchLocation from './components/FetchLocation';
 import Geolocation from '@react-native-community/geolocation';
-import MapBox from '@react-native-mapbox-gl/maps';
-import MapboxGL from '@react-native-mapbox-gl/maps';
+import MapBox from 'react-native-mapbox-gl/maps';
+import MapboxGL from 'react-native-mapbox-gl/maps';
 import { Dimensions } from 'react-native';
 import io from 'socket.io-client';
 import { YellowBox } from 'react-native'
