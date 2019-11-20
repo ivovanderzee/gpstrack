@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io').listen(server);
-const port = 8000;
+const port = process.env.PORT || 8000;
 var connect = require('./dbconnection');
 var Position = require('./positionScheme');
 

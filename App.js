@@ -49,7 +49,7 @@ MapboxGL.setAccessToken('pk.eyJ1IjoiaXZvemVlIiwiYSI6ImNrMGY0cXRldTBubm8zaGxxZDkw
 
 let screenHeight = Dimensions.get("window").height;
 let screenWidth = Dimensions.get("window").width;
-var socket = io.connect('http://localhost:8000');
+var socket = io.connect('https://gpstrack-crowdcontrol.herokuapp.com');
 
 
 
