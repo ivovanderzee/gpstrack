@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
-const server = require('http').createServer(app);
+const server = require('https').createServer(app);
 const io = require('socket.io').listen(server);
 const port = process.env.PORT || 8000;
 var connect = require('./dbconnection');
 var Position = require('./positionScheme');
+var router = express.Router();
+
+router.get('/', function (req,res){
+    res.send('Home');
+})
 
 
 server.listen(port, () => console.log('Verbonden met poort ' + port));
@@ -27,7 +32,7 @@ io.on('connection', socket => {
     });
 
 
-
+module.exports = router;
 
 
 
