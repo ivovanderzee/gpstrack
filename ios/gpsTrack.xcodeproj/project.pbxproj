@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* gpsTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* gpsTrackTests.m */; };
 		56301F9C04F5FD467BA07EB1 /* libPods-gpsTrack-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67893B84223C74DCEC2A232B /* libPods-gpsTrack-tvOS.a */; };
 		8E0C84B94F0FF2B33A5CEFBC /* libPods-gpsTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B9CE6ECDB12C9900A8251F /* libPods-gpsTrack.a */; };
+		C2F25FFC238578F3005477A8 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		C5AD19D3F89F621DC9CC79DD /* libPods-gpsTrack-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BC90E2DD5D08BDA015C653 /* libPods-gpsTrack-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -341,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F25FFC238578F3005477A8 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
