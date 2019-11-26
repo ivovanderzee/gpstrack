@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { TouchableOpacity, StyleSheet, Text }  from 'react-native';
+import { TouchableOpacity, StyleSheet, Text, Dimensions }  from 'react-native';
 
-
+let screenWidth = Dimensions.get("window").width;
 
 const fetchLocation = props => {
     return (
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignSelf: 'center',
     backgroundColor: '#26855c',
-    width: 360,
+    width: screenWidth - 30,
     color: '#fff',
     height: 70,
     justifyContent: 'center',

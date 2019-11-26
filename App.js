@@ -50,7 +50,7 @@ MapboxGL.setAccessToken('pk.eyJ1IjoiaXZvemVlIiwiYSI6ImNrMGY0cXRldTBubm8zaGxxZDkw
 
 let screenHeight = Dimensions.get("window").height;
 let screenWidth = Dimensions.get("window").width;
-var socket = io.connect('http://73b6b516.ngrok.io');
+var socket = io.connect('http://c32d61f8.ngrok.io');
 
 
 
@@ -97,20 +97,16 @@ export default class App extends React.Component {
 
       <View style={styles.container}>
 
-<MapboxGL.MapView styleURL={MapBox.StyleURL.Dark} centerCoordinate={[11.256, 43.77]} minZoomLevel={15} zoomLevel={15} style={styles.map} />
-        
+        <MapboxGL.MapView styleURL={MapBox.StyleURL.Dark} centerCoordinate={[11.256, 43.77]} minZoomLevel={15} zoomLevel={15} style={styles.map} />
 
-<View style={styles.topLayer}>
-
-        <FetchLocation styles={styles.FetchLocation} onGetLocation={this.getUserLocationHandler} />
-
+        <View style={styles.topLayer}>
+          <FetchLocation styles={styles.FetchLocation} onGetLocation={this.getUserLocationHandler} />
+        </View>
 
       </View>
 
-      </View>
- 
 
-      
+
 
     );
 
@@ -135,8 +131,8 @@ const styles = StyleSheet.create({
     flex: 1,
     position: 'absolute',
     alignSelf: 'center',
-    marginTop: '180%',
-   
+    marginTop: screenHeight - 140,
+
   },
 
   FetchLocation: {
